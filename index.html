@@ -47,13 +47,15 @@
     <header>
       <!-- Nab Section start -->
       <navbar>
-        <div class="navbar bg-base-100 bg-[#f8f5f58c] px-24 pt-16">
-          <div class="navbar-start">
+        <div
+          class="navbar bg-base-100 bg-[#f8f5f58c] p-5 sm:px-24 sm:pt-16 flex justify-between gap-5"
+        >
+          <div class="sm:navbar-start">
             <div class="dropdown">
               <div
                 tabindex="0"
                 role="button"
-                class="btn btn-ghost lg:hidden"
+                class="btn btn-ghost sm:hidden"
               ></div>
             </div>
             <i
@@ -63,7 +65,7 @@
               >Rinterio</a
             >
           </div>
-          <div class="navbar-center hidden lg:flex">
+          <div class="navbar-center hidden sm:flex">
             <div>
               <ul class="flex space-x-8 text-2xl text-gray-700">
                 <li class="font-bold">Home</li>
@@ -74,7 +76,7 @@
               </ul>
             </div>
           </div>
-          <div class="navbar-end gap-6">
+          <div class="sm:navbar-end gap-6 hidden sm:block">
             <i
               class="h-9 w-9 p-2 rounded-full bg-[#FFFFFF] fa-solid fa-magnifying-glass"
             ></i>
@@ -88,6 +90,9 @@
               ></i
             ></a>
           </div>
+          <div class="sm:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </navbar>
       <!-- nav section end -->
@@ -95,9 +100,13 @@
       <!-- Hero Section Start -->
       <div class="hero bg-[#f8f5f58c]">
         <div class="text-center items-center justify-center flex flex-col">
-          <img class="max-w-xl h-auto" src="assets/banner.png" alt="" />
+          <img
+            class="w-full sm:max-w-xl h-auto"
+            src="assets/banner.png"
+            alt=""
+          />
           <div>
-            <h1 class="text-7xl font-bold mt-10">
+            <h1 class="text-5xl sm:text-7xl font-bold mt-10">
               A barn house of this design has a <br />
               striking appearance
             </h1>
@@ -107,7 +116,8 @@
               accents, and large windows that flood the space with natural
               light.
             </p>
-            <a class="btn bg-[#ABEF5F80] text-xl rounded-full mb-20"
+            <a
+              class="btn w-full sm:w-fit bg-[#ABEF5F80] text-xl rounded-full mb-20"
               >View Details<i
                 class="fa-solid h-7 w-7 bg-[#ABEF5F] rounded-full p-1 text-black -rotate-45 fa-arrow-right"
               ></i
@@ -120,8 +130,8 @@
     <!-- Main section -->
     <main>
       <!-- Our Room design start -->
-      <div class=" bg-gray-100 p-24">
-        <div class="text-center p-10">
+      <div class="bg-gray-100 p-5 sm:p-24">
+        <div class="text-center sm:p-10">
           <h1 class="text-6xl font-extrabold">Our Latest Room Design</h1>
           <p class="mt-5 mb-5">
             Experience modern elegance with our latest room design. Featuring
@@ -130,9 +140,9 @@
             versatility.
           </p>
         </div>
-        <div class="flex gap-10 justify-evenly">
+        <div class="flex flex-col sm:flex-row gap-10 justify-evenly">
           <!-- card 1 -->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-full sm:w-96 shadow-xl">
             <figure>
               <img src="assets/window.jpg" alt="Shoes" />
             </figure>
@@ -152,7 +162,7 @@
             </div>
           </div>
           <!-- card 2 -->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-full sm:w-96 shadow-xl">
             <figure>
               <img src="assets/rumspace.jpg" alt="Shoes" />
             </figure>
@@ -172,7 +182,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-full sm:w-96 shadow-xl">
             <figure>
               <img src="assets/bedrum.jpg" alt="Shoes" />
             </figure>
@@ -192,7 +202,7 @@
             </div>
           </div>
           <!-- card 4 -->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-full sm:w-96 shadow-xl">
             <figure>
               <img src="assets/kitchenroom.jpg" alt="Shoes" />
             </figure>
@@ -215,9 +225,11 @@
       </div>
       <!-- Design section start -->
       <div>
-        <div class="bg-gray-100 flex justify-around px-10">
+        <div
+          class="bg-gray-100 flex flex-col sm:flex-row justify-around px-5 sm:px-10"
+        >
           <!-- Text content -->
-          <div class=" px-10">
+          <div class="sm:px-10">
             <div>
               <img src="assets/Vector.png" alt="" />
               <a class="btn bg-[#FFFFFF] text-lg ms-5 rounded-full"
@@ -226,19 +238,21 @@
                 ></i
                 >About Us</a
               >
-              <h1 class="font-extrabold text-6xl text-black mt-5 ms-5">
+              <h1
+                class="font-extrabold text-5xl sm:text-6xl text-black mt-5 ms-5"
+              >
                 We design thoughtful,<br />
                 liveable spaces
               </h1>
               <p class="mt-5 ms-5">
                 The barn house captivates with its blend of rustic charm and
-                <br />modern sophistication, featuring weathered wood, sleek metal
-                accents.
+                <br />modern sophistication, featuring weathered wood, sleek
+                metal accents.
               </p>
             </div>
             <div>
               <!-- card-1 -->
-              <div class="flex bg-[#FFFFFF] gap-5 rounded-xl mx-5 p-4 mt-5 ">
+              <div class="flex bg-[#FFFFFF] gap-5 rounded-xl mx-5 p-4 mt-5">
                 <img src="assets/commercial.png" alt="" />
                 <div>
                   <h2 class="font-extrabold text-2xl">Commercial</h2>
@@ -262,7 +276,7 @@
             </div>
           </div>
           <!-- Image content -->
-          <div class="flex mt-20 mx-10 px-5">
+          <div class="flex mt-5 sm:mt-20 sm:mx-10 px-5">
             <img src="assets/Rectangle.png" alt="" />
           </div>
         </div>
@@ -271,35 +285,35 @@
 
       <!-- Our Members Section -->
 
-      <div class="bg-gray-100 p-24">
+      <div class="bg-gray-100 p-5 sm:p-24">
         <div
-        class="flex p-10 bg-white gap-24 justify-around rounded-xl"
-      >
-        <!-- card 1 -->
-        <div class="text-center">
-          <i class="text-2xl fa-solid fa-message"></i>
-          <h1 class="text-3xl mt-2 font-extrabold">235+</h1>
-          <p class="mt-2">Happy Client Review</p>
+          class="flex flex-col sm:flex-row sm:p-10 bg-white gap-24 justify-around rounded-xl"
+        >
+          <!-- card 1 -->
+          <div class="text-center">
+            <i class="text-2xl fa-solid fa-message"></i>
+            <h1 class="text-3xl mt-2 font-extrabold">235+</h1>
+            <p class="mt-2">Happy Client Review</p>
+          </div>
+          <!-- card 2 -->
+          <div class="text-center">
+            <i class="text-2xl fa-solid fa-house-crack"></i>
+            <h1 class="text-3xl mt-2 font-extrabold">50+</h1>
+            <p class="mt-2">Work Departments</p>
+          </div>
+          <!-- card 3 -->
+          <div class="text-center">
+            <i class="text-2xl fa-solid fa-users"></i>
+            <h1 class="text-3xl mt-2 font-extrabold">30k+</h1>
+            <p class="mt-2">Our Happy Client</p>
+          </div>
+          <!-- card 4 -->
+          <div class="text-center">
+            <i class="text-2xl fa-solid fa-user-group"></i>
+            <h1 class="text-3xl mt-2 font-extrabold">307+</h1>
+            <p class="mt-2">Staff Members</p>
+          </div>
         </div>
-        <!-- card 2 -->
-        <div class="text-center">
-          <i class="text-2xl fa-solid fa-house-crack"></i>
-          <h1 class="text-3xl mt-2 font-extrabold">50+</h1>
-          <p class="mt-2">Work Departments</p>
-        </div>
-        <!-- card 3 -->
-        <div class="text-center">
-          <i class="text-2xl fa-solid fa-users"></i>
-          <h1 class="text-3xl mt-2 font-extrabold">30k+</h1>
-          <p class="mt-2">Our Happy Client</p>
-        </div>
-        <!-- card 4 -->
-        <div class="text-center">
-          <i class="text-2xl fa-solid fa-user-group"></i>
-          <h1 class="text-3xl mt-2 font-extrabold">307+</h1>
-          <p class="mt-2">Staff Members</p>
-        </div>
-      </div>
       </div>
 
       <!-- Our Work process section start -->
@@ -312,7 +326,7 @@
             ></i
             >About Us</a
           >
-          <h1 class="font-extrabold text-6xl mt-5 text-black">
+          <h1 class="font-extrabold text-5xl sm:text-6xl mt-5 text-black">
             Our Works Process
           </h1>
           <p class="mt-5">
@@ -322,9 +336,11 @@
           </p>
         </div>
         <!-- Card Section -->
-        <div class="flex gap-10 px-24 mt-10">
+        <div
+          class="flex flex-col sm:flex-row gap-5 sm:gap-10 px-5 sm:px-24 mt-10"
+        >
           <!-- card 1 -->
-          <div class="bg-[#E7C1D3] p-9 rounded-xl mb-20">
+          <div class="bg-[#E7C1D3] p-9 rounded-xl sm:mb-20">
             <img src="assets/concept.png" alt="" />
             <h3 class="text-2xl font-extrabold my-5 text-black">Concept</h3>
             <p>
@@ -333,7 +349,7 @@
             </p>
           </div>
           <!-- card 2 -->
-          <div class="bg-[#EFDA6E] p-9 rounded-xl mb-20">
+          <div class="bg-[#EFDA6E] p-9 rounded-xl sm:mb-20">
             <img src="assets/flow-chart.png" alt="" />
             <h3 class="text-2xl font-extrabold my-5 text-black">
               Design Process
@@ -344,7 +360,7 @@
             </p>
           </div>
           <!-- card 3 -->
-          <div class="bg-[#A4DAC3] p-9 rounded-xl mb-20">
+          <div class="bg-[#A4DAC3] p-9 rounded-xl sm:mb-20">
             <img src="assets/vision.png" alt="" />
             <h3 class="text-2xl font-extrabold my-5 text-black">Supervision</h3>
             <p>
@@ -353,7 +369,7 @@
             </p>
           </div>
           <!-- card 4 -->
-          <div class="bg-[#E7C1D3] p-9 rounded-xl mb-20">
+          <div class="bg-[#E7C1D3] p-9 rounded-xl sm:mb-20">
             <img src="assets/budget-planning.png" alt="" />
             <h3 class="text-2xl font-extrabold my-5 text-black">
               Budget Planning
@@ -366,7 +382,7 @@
         </div>
       </div>
       <!-- Latest Portfolio section start -->
-      <div class="p-16">
+      <div class="p-5 sm:p-16">
         <!-- text section -->
         <div class="text-center">
           <a class="btn bg-[#ABEF5F33] text-lg rounded-full"
@@ -387,11 +403,11 @@
         <!-- card section -->
         <div>
           <!-- card 1 -->
-          <div class="flex flex-row justify-center mt-8 w-full">
+          <div class="flex flex-col sm:flex-row justify-center mt-8 w-full">
             <div
-              class="flex basis-[65%] gap-5 p-5 bg-[#FFFFFF] border rounded-xl mr-5"
+              class="flex flex-col sm:flex-row basis-full sm:basis-[65%] gap-5 p-5 bg-[#FFFFFF] border rounded-xl sm:mr-5"
             >
-              <img src="assets/img1.png" alt="" />
+              <img src="assets/img1.png" alt="" class="w-full" />
               <div>
                 <h2 class="text-2xl font-extrabold">Commercial</h2>
                 <p class="mt-5 mb-8">
@@ -407,14 +423,16 @@
               </div>
             </div>
             <div class="bg-[#FFFFFF] rounded-xl p-5 border">
-              <img src="assets/img2.png" alt="" />
+              <img src="assets/img2.png" class="w-full" alt="" />
             </div>
           </div>
-          <div class="flex justify-center gap-5 mt-8">
+          <div class="flex flex-col sm:flex-row justify-center gap-5 mt-8">
             <div class="flex-none bg-[#FFFFFF] rounded-xl border p-5">
-              <img src="assets/img3.png" alt="" />
+              <img src="assets/img3.png" alt="" class="w-full" />
             </div>
-            <div class="flex basis-1/2 bg-[#FFFFFF] rounded-xl p-5 border">
+            <div
+              class="flex flex-col sm:flex-row basis-full sm:basis-1/2 bg-[#FFFFFF] rounded-xl p-5 border"
+            >
               <img src="assets/img4.png" alt="" />
               <div class="mx-5">
                 <h2 class="text-2xl font-extrabold">Commercial</h2>
@@ -431,7 +449,7 @@
               </div>
             </div>
             <div class="flex-none bg-[#FFFFFF] rounded-xl p-5 border">
-              <img src="assets/img5.png" alt="" />
+              <img src="assets/img5.png" class="w-full" alt="" />
             </div>
           </div>
         </div>
@@ -449,7 +467,7 @@
             ></i
             >Rinterio News</a
           >
-          <h1 class="font-extrabold text-6xl mt-5 text-black">
+          <h1 class="font-extrabold text-5xl sm:text-6xl mt-5 text-black">
             Read Our Articles and News
           </h1>
           <p class="mt-5">
@@ -460,9 +478,9 @@
         </div>
 
         <!-- card section -->
-        <div class="flex px-20 mt-10">
+        <div class="flex flex-col sm:flex-row px-5 sm:px-20 mt-10">
           <!-- card 1 -->
-          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-20">
+          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-5 sm:mb-20">
             <div class="flex justify-center">
               <img class="w-full" src="assets/article1.png" alt="" />
             </div>
@@ -488,7 +506,7 @@
             </p>
           </div>
           <!-- card 2 -->
-          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-20">
+          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-5 sm:mb-20">
             <div class="flex justify-center">
               <img class="w-full" src="assets/article2.png" alt="" />
             </div>
@@ -514,7 +532,7 @@
             </p>
           </div>
           <!-- card 3 -->
-          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-20">
+          <div class="bg-[#FFFFFF] p-5 mx-5 rounded-xl mb-5 sm:mb-20">
             <div class="flex justify-center">
               <img class="w-full" src="assets/article3.png" alt="" />
             </div>
@@ -544,7 +562,10 @@
       <!-- Our News section end -->
 
       <!-- Next Project section start -->
-      <div style="background-image: url(assets/bg.jpg);background-size: cover;" class=" bg-gray-500 px-52 mt-3 py-20">
+      <div
+        style="background-image: url(assets/bg.jpg); background-size: cover"
+        class="bg-gray-500 p-5 sm:px-52 mt-3 sm:py-20"
+      >
         <!-- Text Section -->
 
         <div class="text-center">
@@ -565,7 +586,7 @@
         </div>
         <!-- input section -->
         <div class="w-full">
-          <div class="grid grid-cols-2 gap-5 w-full mt-10">
+          <div class="grid sm:grid-cols-2 gap-5 w-full mt-10">
             <input
               type="text"
               placeholder="First Name*"
@@ -588,7 +609,10 @@
             />
           </div>
         </div>
-        <textarea class="textarea w-full h-32 mt-5" placeholder="Write your message here"></textarea>
+        <textarea
+          class="textarea w-full h-32 mt-5"
+          placeholder="Write your message here"
+        ></textarea>
         <div class="text-center">
           <p class="btn mt-8 w-full bg-[#ABEF5F] text-xl rounded-full">
             Send Mail
@@ -597,15 +621,13 @@
             ></i>
           </p>
         </div>
-        </div>
-        
       </div>
     </main>
 
     <!-- Footer section -->
 
     <footer>
-      <div class="bg-black text-center p-24 mt-5">
+      <div class="bg-black text-center p-5 sm:p-24 mt-5">
         <i
           class="fa-solid h-7 w-7 bg-[#ABEF5F] rounded-full text-center p-1 text-black -rotate-45 fa-arrow-right"
         ></i>
@@ -618,7 +640,7 @@
           featuring weathered wood, sleek metal accents.
         </p>
         <div class="text-white mt-8">
-          <ul class="flex gap-10 text-2xl justify-center">
+          <ul class="flex flex-col sm:flex-row gap-10 text-2xl justify-center">
             <li>Home</li>
             <li>Services</li>
             <li>Portfolio</li>
@@ -627,7 +649,7 @@
           </ul>
         </div>
         <div>
-          <a class="btn mt-8 bg-[#ABEF5F] text-xl rounded-full"
+          <a class="btn mt-8 w-full sm:w-fit bg-[#ABEF5F] text-xl rounded-full"
             >Book Consult
             <i
               class="fa-solid h-7 w-7 bg-black rounded-full p-1 text-white -rotate-45 fa-arrow-right"
